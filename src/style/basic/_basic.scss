@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Kalam:wght@300;400&display=swap');
+
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+    background-image: url("./pattern.jpg");
+    background-repeat: no-repeat;
+}
+
+html{
+    font-size: 62.5%;
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+ul{
+    list-style: none;
+}
+
+input{
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+}
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}

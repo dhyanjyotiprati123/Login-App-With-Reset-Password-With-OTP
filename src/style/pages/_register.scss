@@ -1,0 +1,93 @@
+
+.register{
+    height: 100vh;
+
+    &-wrapper{
+        @include Flex;
+        height: inherit;
+    }
+
+    &-card{
+        width: 60rem;
+        height: 100rem;
+        border: 3px solid white;
+        border-radius: 2rem;
+        text-align: center;
+        padding: 5rem 3rem;
+        background: rgba(255,255,255, .7);
+        backdrop-filter: blur(1.7);
+        box-shadow: 2px 2px 20px rgba(0,0,0, .2);
+        
+
+        h1{
+            font-size: 4rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        p{
+            font-size: 2rem;
+            font-weight: 500;
+            color: grey;
+            text-transform: capitalize;
+        }
+    }
+
+    &-profile{
+        border: 2px solid white;
+        width: 20rem;
+        height: 20rem;
+        @include Flex;
+        margin: 2rem auto;
+        border-radius: 50%;
+        background: #d9ddfe;
+        box-shadow: 2px 2px 20px rgba(0,0,0, .2);
+        cursor: pointer;
+
+        img{
+            width: 19rem;
+            height: 19rem;
+            border-radius: 50%;
+
+        }
+    }
+
+    &-profilePic{
+        display: none;
+    }
+
+    &-form{
+        padding: 3rem 0;
+        @include Flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        h6{
+            font-size: 1.3rem;
+            color: grey;
+            word-spacing: 2px;
+            @include Flex;
+            gap: 1.5rem;
+
+            span{
+                color: rgb(252, 80, 80);
+                font-size: 1.5rem;
+            }
+        }
+    }
+   
+    &-btn{
+        @include Flex;
+        padding: 2rem 1rem;
+        width: 65%;
+        background: rgb(134, 68, 181);
+        color: white;
+        transition: all .4s ease-in;
+        font-size: 1.8rem;
+        
+        &:hover{
+            background: #ff6a6a;
+        }
+    }
+
+}

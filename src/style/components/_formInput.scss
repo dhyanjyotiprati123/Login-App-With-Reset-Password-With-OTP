@@ -1,0 +1,37 @@
+
+.forminput{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      gap: 1rem;
+      padding: 0 2rem;
+
+    input{
+        padding: 2rem 1rem;
+        width: 100%;
+        font-size: 1.5rem;
+
+        &::placeholder{
+            font-size: 1.8rem;
+            font-weight: 500;
+            letter-spacing: 2px;
+            color: black;
+            text-transform: capitalize;
+        }
+        &:invalid[focused = 'true']{
+           border: 1px solid red;
+        }
+        &:invalid[focused = 'true'] ~ span{
+            display: block;
+        }
+    }
+
+    
+    span{
+        font-size: 1.3rem;
+        color: red;
+        display: none;
+    }
+    
+}

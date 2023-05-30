@@ -1,0 +1,35 @@
+
+.otp{
+    height: 100vh;
+
+    &-wrapper{
+        @include Flex;
+        height: inherit;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    &-generate{
+        padding: 1rem 2rem;
+        background: rgba(35, 75, 161, 0.773);
+        color: white;
+    }
+
+    &-form{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        border: 1px dashed grey;
+        padding: 3rem;
+    }
+    &-input{
+        padding: 1rem .5rem;
+    }
+    &-submit{
+        padding: 1rem 2rem;
+        background: rgb(56, 99, 56);
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: white;
+    }
+}

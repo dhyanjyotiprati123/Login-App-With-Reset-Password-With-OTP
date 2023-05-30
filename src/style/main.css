@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Kalam:wght@300;400&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  background-image: url("./pattern.jpg");
+  background-repeat: no-repeat;
+}
+
+html {
+  font-size: 62.5%;
+}
+html ::-webkit-scrollbar {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.forminput {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+.forminput input {
+  padding: 2rem 1rem;
+  width: 100%;
+  font-size: 1.5rem;
+}
+.forminput input::-moz-placeholder {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: black;
+  text-transform: capitalize;
+}
+.forminput input::placeholder {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: black;
+  text-transform: capitalize;
+}
+.forminput input:invalid[focused=true] {
+  border: 1px solid red;
+}
+.forminput input:invalid[focused=true] ~ span {
+  display: block;
+}
+.forminput span {
+  font-size: 1.3rem;
+  color: red;
+  display: none;
+}
+
+.login {
+  height: 100vh;
+}
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+.login-card {
+  width: 60rem;
+  height: 100rem;
+  border: 3px solid white;
+  border-radius: 2rem;
+  text-align: center;
+  padding: 5rem 3rem;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(1.7);
+          backdrop-filter: blur(1.7);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+.login-card h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.login-card p {
+  font-size: 2rem;
+  font-weight: 500;
+  color: grey;
+  text-transform: capitalize;
+}
+.login-profile {
+  padding: 3rem;
+  font-size: 13rem;
+  color: rgb(19, 110, 246);
+  border: 2px solid white;
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  border-radius: 50%;
+  background: #d9ddfe;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+.login-form {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.login-form h6 {
+  font-size: 1.3rem;
+  color: grey;
+  word-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.login-form h6 span {
+  color: rgb(252, 80, 80);
+  font-size: 1.5rem;
+}
+.login-input {
+  padding: 2rem 1rem;
+  width: 65%;
+  font-size: 1.5rem;
+}
+.login-input::-moz-placeholder {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: black;
+  text-transform: capitalize;
+}
+.login-input::placeholder {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: black;
+  text-transform: capitalize;
+}
+.login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  width: 65%;
+  background: rgb(134, 68, 181);
+  color: white;
+  transition: all 0.4s ease-in;
+  font-size: 1.8rem;
+}
+.login-btn:hover {
+  background: #ff6a6a;
+}
+
+.register {
+  height: 100vh;
+}
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+.register-card {
+  width: 60rem;
+  height: 100rem;
+  border: 3px solid white;
+  border-radius: 2rem;
+  text-align: center;
+  padding: 5rem 3rem;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(1.7);
+          backdrop-filter: blur(1.7);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+.register-card h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.register-card p {
+  font-size: 2rem;
+  font-weight: 500;
+  color: grey;
+  text-transform: capitalize;
+}
+.register-profile {
+  border: 2px solid white;
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  border-radius: 50%;
+  background: #d9ddfe;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.register-profile img {
+  width: 19rem;
+  height: 19rem;
+  border-radius: 50%;
+}
+.register-profilePic {
+  display: none;
+}
+.register-form {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.register-form h6 {
+  font-size: 1.3rem;
+  color: grey;
+  word-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.register-form h6 span {
+  color: rgb(252, 80, 80);
+  font-size: 1.5rem;
+}
+.register-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  width: 65%;
+  background: rgb(134, 68, 181);
+  color: white;
+  transition: all 0.4s ease-in;
+  font-size: 1.8rem;
+}
+.register-btn:hover {
+  background: #ff6a6a;
+}
+
+.profile {
+  height: 100vh;
+}
+.profile-wrapper {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.profile-logout {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+}
+.profile-card {
+  width: 80rem;
+  height: 110rem;
+  border: 2px solid white;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+}
+.profile-card h1 {
+  font-size: 4.5rem;
+  color: darkblue;
+  font-weight: 200;
+}
+.profile-card h2 {
+  font-size: 5rem;
+  font-weight: 500;
+  font-family: "Kalam", cursive;
+}
+.profile-card h3 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+.profile-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+.profile-avatar {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+  background-color: rgb(223, 235, 253);
+  position: relative;
+  cursor: pointer;
+}
+.profile-avatar:hover .profile-camera {
+  display: none;
+}
+.profile-avatar input {
+  display: none;
+}
+.profile-camera {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-preview {
+  width: 19rem;
+  height: 19rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.profile-container {
+  padding: 3rem 0;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.profile-input {
+  padding: 2rem 1rem;
+  width: 100%;
+  font-size: 1.5rem;
+}
+.profile-input::-moz-placeholder {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: black;
+  text-transform: capitalize;
+}
+.profile-input::placeholder {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: black;
+  text-transform: capitalize;
+}
+.profile-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  background: rgb(134, 68, 181);
+  color: white;
+  transition: all 0.4s ease-in;
+  font-size: 1.8rem;
+}
+.profile-btn:hover {
+  background: #ff6a6a;
+}
+.profile-abstract {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.profile-abstract img {
+  width: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.btn-logout {
+  padding: 1rem 2rem;
+  background: #fcb8b8;
+  cursor: pointer;
+}
+
+.otp {
+  height: 100vh;
+}
+.otp-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  flex-direction: column;
+  gap: 4rem;
+}
+.otp-generate {
+  padding: 1rem 2rem;
+  background: rgba(35, 75, 161, 0.773);
+  color: white;
+}
+.otp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  border: 1px dashed grey;
+  padding: 3rem;
+}
+.otp-input {
+  padding: 1rem 0.5rem;
+}
+.otp-submit {
+  padding: 1rem 2rem;
+  background: rgb(56, 99, 56);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.recovery {
+  min-height: 100vh;
+}
+.recovery-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  flex-direction: column;
+  padding: 10rem;
+}
+.recovery-wrapper h1 {
+  font-size: 5rem;
+  color: darkblue;
+  font-family: "Kalam", cursive;
+}
+.recovery-form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+.recovery-input {
+  padding: 2rem 1rem;
+  min-width: 30rem;
+}
+.recovery-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(21, 104, 247);
+  padding: 2rem 3rem;
+  min-width: 20rem;
+  font-size: 2rem;
+  color: white;
+}/*# sourceMappingURL=main.css.map */
